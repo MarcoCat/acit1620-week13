@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM manipulation example</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script defer src="scripts/script.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>DOM manipulation example</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <body>
+        <header>
+            <h1>Enter student's information</h1>
+            <button>Change Background Color</button>
+        </header>
 
-<body>
-    <header>
-        <h1>Enter student's information</h1>
-        <button>Change Background Color</button>
-    </header>
+        <section class="user-field-section">
+            <div class="user-field">
+                <label>First Name:</label>
+                <input id="firstname" type="text" />
+                <label>Last Name:</label>
+                <input id="lastname" type="text" />
+                <label>Program Name:</label>
+                <input id="progName" type="text" />
+            </div>
+            <button>Submit</button>
+        </section>
 
-    <section>
-        <label>First Name:</label>
-        <input id="firstname" type="text">
-        <label>Last Name:</label>
-        <input id="lastname" type="text">
-        <label>Program Name:</label>
-        <input id="progName" type="text">
-        <button>Submit</button>
-    </section>
-
-    <section>
-        <h2>Enrolled students</h2>
-        <ul>Sudents Enrolled in CIT</ul>
-        <ul>Sudents Enrolled in CST</ul>
-    </section>
-
-</body>
-
+        <section class="enrolled-student">
+            <h2>Enrolled students</h2>
+            <div class="course-list">
+                <ul class="CIT">
+                    Sudents Enrolled in CIT
+                </ul>
+                <ul class="CST">
+                    Sudents Enrolled in CST
+                </ul>
+            </div>
+        </section>
+    </body>
 </html>

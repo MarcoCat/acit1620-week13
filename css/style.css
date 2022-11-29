@@ -1,3 +1,40 @@
 body {
     background-color: tan;
+    display: flex;
+    flex-direction: column;
+    gap: 2em
+}
+
+.bgcolor {
+    background-color: rgb(240, 180, 249);
+}
+
+.user-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.user-field-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+section button {
+    margin: auto;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-field, .course-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
