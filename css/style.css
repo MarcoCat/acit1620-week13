@@ -5,6 +5,10 @@ body {
     gap: 2em
 }
 
+.bgcolor {
+    background-color: rgb(240, 180, 249);
+}
+
 .user-field {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,23 +22,18 @@ body {
 }
 
 section button {
-    margin:auto;
-    display:block;
+    margin: auto;
+    display: block;
 }
 
 @media (min-width: 600px) {
     header {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
-     
-    .user-field {
-        display: flex;
-        justify-content: space-evenly;
-    }
 
-    .course-list{
+    .user-field, .course-list {
         display: flex;
         justify-content: space-evenly;
     }
