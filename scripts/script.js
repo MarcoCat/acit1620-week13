@@ -15,7 +15,7 @@ function sumbitNames() {
     let lname = document.querySelector('#lastname');
     let pname = document.querySelector('#progName');
     students.push({ 'firstName': fname.value, 'lastName': lname.value, 'progName': pname.value });
-    populateList({ 'firstName': fname.value, 'lastName': lname.value, 'progName': pname.value })
+    populateList(students[students.length - 1]);
     fname.value = '';
     lname.value = '';
     pname.value = '';
@@ -29,11 +29,11 @@ function changeBG() {
 function populateList(student) {
     let newLi = document.createElement('li');
     newLi.textContent = `${student.firstName} ${student.lastName}`;
-    if (student.progName === 'CIT'){
+    if (student.progName === 'CIT') {
         let citList = document.querySelector('.CIT');
         citList.appendChild(newLi);
     }
-    else if (student.progName === 'CST'){
+    else if (student.progName === 'CST') {
         let cstList = document.querySelector('.CST');
         cstList.appendChild(newLi);
     }
